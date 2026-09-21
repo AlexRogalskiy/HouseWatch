@@ -1,9 +1,7 @@
-import os
 from typing import Dict, Optional
 from clickhouse_pool import ChPool
 from clickhouse_driver import Client
 from housewatch.clickhouse.queries.sql import EXISTING_TABLES_SQL
-from housewatch.utils import str_to_bool
 from django.core.cache import cache
 from django.conf import settings
 import hashlib

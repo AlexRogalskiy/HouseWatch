@@ -1,11 +1,8 @@
 import structlog
-from collections import defaultdict
-from datetime import datetime
 from typing import Dict, Optional
 from uuid import uuid4
 from housewatch.clickhouse.client import run_query
 from housewatch.models.backup import ScheduledBackup, ScheduledBackupRun
-from housewatch.clickhouse.table import table_engine_full
 from housewatch.clickhouse.clusters import get_node_per_shard
 
 from django.conf import settings
